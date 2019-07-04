@@ -1,4 +1,4 @@
-package nju.androidchat.client.mvp2;
+package nju.androidchat.client.hw1;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -8,9 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -29,8 +27,8 @@ import nju.androidchat.client.component.OnRecallMessageRequested;
 
 @Log
 public class Mvp2TalkActivity extends AppCompatActivity implements Mvp2Contract.TalkView, TextView.OnEditorActionListener, OnRecallMessageRequested {
-    private Mvp2Contract.TalkPresenter presenter;
     private final static String pattern = "!\\[.*?\\]\\(.*?\\)";
+    private Mvp2Contract.TalkPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
